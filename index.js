@@ -27,7 +27,6 @@ const questions = async () => {
             type: "input",
             message: "What is the team manager's office number?",
             name: "officeNumber",
-            choices: ["Engineer", "Intern", "Manager"],
         },
         
         ])
@@ -45,15 +44,15 @@ const eQuestions = async () => {
     .prompt([
         {
             type: "input",
-            message: "What is the team member's name?",
+            message: "What is the engineer's name?",
             name: "name",
         }, {
             type: "input",
-            message: "What is the team member's id?",
+            message: "What is the engineer's id?",
             name: "id",
         }, {
             type: "input",
-            message: "What is the team member's email?",
+            message: "What is the team engineer's email?",
             name: "email",
         }, {
             type: "input",
@@ -77,15 +76,15 @@ const iQuestions = async () => {
     .prompt([
         {
             type: "input",
-            message: "What is the team member's name?",
+            message: "What is the intern's name?",
             name: "name",
         }, {
             type: "input",
-            message: "What is the team member's id?",
+            message: "What is the intern's id?",
             name: "id",
         }, {
             type: "input",
-            message: "What is the team member's email?",
+            message: "What is the intern's email?",
             name: "email",
         }, {
             type: "input",
@@ -94,6 +93,7 @@ const iQuestions = async () => {
         },
         
         ])
+        
         const createIntern = new Intern(
             answers.name,
             answers.id,
@@ -119,18 +119,18 @@ async function listConditional () {
     }
     if(addOrFinish.addFinish ==='Add intern'){
         return iQuestions();
-    } else makeTeam();
+    } else makeProfile();
 }
 
-async function promptQuestions() {
+async function promptUser() {
     await questions()
 
     listConditional();
 }
 
-promptQuestions();
+promptUser();
 
-function makeTeam () {
+function makeProfile () {
     fs.writeFileSync(
         "./dist/index.html",
         createTeam(teamData),
