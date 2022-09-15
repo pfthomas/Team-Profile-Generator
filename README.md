@@ -3,6 +3,7 @@
 
 ## Description
 This project asks for information from the user about Team members, then converts the information to cards to display on an HTML page
+Video demonstration: https://www.youtube.com/watch?v=KU6AK5tI_dI
 # Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)
