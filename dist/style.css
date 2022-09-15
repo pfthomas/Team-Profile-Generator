@@ -1,0 +1,28 @@
+.team-area {
+    max-width: 1000px;
+    margin: auto;
+    flex-wrap: wrap;
+} 
+  
+.card {
+    margin: 10px;
+    max-width: 280px;
+    width: 90%;
+    min-height: 360px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+    border: none;
+}
+  
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+  
+.list-group-item {
+    color: #000000;
+}
