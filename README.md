@@ -16,7 +16,7 @@ To install necessary dependencies, run the following command:
 jest and inquirer
 
 ## Usage
-nothing specific to be known
+N/A
 
 ## License 
 
