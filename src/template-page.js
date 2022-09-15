@@ -78,7 +78,6 @@ module.exports = (team) => {
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My Team</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
-    <title>Bootstrap UI Components</title>
     <link rel = "stylesheet" href ="style.css">
 </head>
 <body>
